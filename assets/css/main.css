@@ -6376,10 +6376,10 @@ html.boxed-layout .main_Wrapper.header-fixed.aside-static #header{
     color:#457fca
 }
 .boxs .boxs-header h3.hb-blush:before{
-    background-color:#F15F79
+    background-color:#78b83e
 }
 .boxs .boxs-header h3.hb-blush strong{
-    color:#F15F79
+    color:#78b83e;
 }
 .boxs .boxs-header h3.hb-green:before{
     background-color:#78b83e
@@ -18459,4 +18459,5 @@ a:focus,a:active,button:active,button:focus,button:hover,button::-moz-focus-inne
 .progress-bar-warning{ background: #2FC59F; }
 .progress-bar-danger{ background: #0093AC; }
 .progress-bar-primary{ background: #d8c72b;  }
-
+.w-auto{ width: auto !important; }
+.table .fa{ color: #abe04a; }

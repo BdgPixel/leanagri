@@ -101,4 +101,6 @@ $(window).load(function () {
 
 	// Bar charts using inline values
     $('.sparkbar').sparkline('html', { type: 'bar' });
+
+    
 });
