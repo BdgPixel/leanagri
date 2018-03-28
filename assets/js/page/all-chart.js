@@ -9,7 +9,7 @@ $(window).load(function () {
         ],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Fertilizer A', 'Fertilizer B'],
         lineColors: ['#746c9f', '#ababab'],
         lineWidth: '0',
         grid: false,
@@ -27,7 +27,7 @@ $(window).load(function () {
         ],
         xkey: 'y',
         ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
+        labels: ['Fertilizer A', 'Fertilizer B'],
         barColors: ['#2ec7c9', '#b6a2de']
     });
 

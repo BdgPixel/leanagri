@@ -20,14 +20,14 @@ $(window).load(function () {
 	Morris.Area({
 		element: 'line-area-example',
 		data: [
-			{ y: '2013', a: 10, b: 3 },
-			{ y: '2014', a: 14, b: 5 },
-			{ y: '2015', a: 8, b: 2 },
-			{ y: '2016', a: 20, b: 15 }
+			{ y: 'January', a: 10, b: 3 },
+			{ y: 'February', a: 14, b: 5 },
+			{ y: 'March', a: 8, b: 2 },
+			{ y: 'April', a: 20, b: 15 }
 		],
 		xkey: 'y',
 		ykeys: ['a', 'b'],
-		labels: ['Series A', 'Series B'],
+		labels: ['Fertilizer A', 'Fertilizer B'],
 		lineColors: ['#746c9f', '#ababab'],
 		lineWidth: '0',
 		grid: false,

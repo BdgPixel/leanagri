@@ -822,7 +822,10 @@
                                     </thead>
                                     <tbody >
                                         <tr>
-                                            <td>Farmer A</td>
+                                            <td>
+                                                <button class="btn btn-raised btn-default" data-toggle="modal" data-target="#myModal">Farmer A<div class="ripple-container"></div></button>
+                                                <!-- Farmer A -->
+                                            </td>
                                             <td>Maize</td>
                                             <td>SAn</td>
                                             <td>P256</td>
@@ -830,7 +833,9 @@
                                             <td><a href="farmer_info.html"><i class="fa fa-2x fa-file-pdf-o"></i></a></td>
                                         </tr>
                                         <tr>
-                                            <td>Farmer B</td>
+                                            <td>
+                                                <button class="btn btn-raised btn-default" data-toggle="modal" data-target="#myModal2">Farmer B<div class="ripple-container"></div></button>
+                                            </td>
                                             <td>Maize</td>
                                             <td>SAn</td>
                                             <td>P258</td>
@@ -838,7 +843,9 @@
                                             <td><a href="farmer_info.html"><i class="fa fa-2x fa-file-pdf-o"></i></a></td>
                                         </tr>
                                         <tr>
-                                            <td>Farmer C</td>
+                                            <td>
+                                                <button class="btn btn-raised btn-default" data-toggle="modal" data-target="#myModal3">Farmer C<div class="ripple-container"></div></button>
+                                            </td>
                                             <td>Maize</td>
                                             <td>SAn</td>
                                             <td>P267</td>
@@ -856,90 +863,70 @@
                 </div>
                 
                 
-                <div class="row clearfix">
-                    <div class="col-md-8 col-sm-12 col-xs-12" style="display: none;">
-                        <section class="boxs">
-                            <div class="boxs-header">
-                                <h3 class="custom-font hb-green hidden-xl-down">
-                                    <strong>Yearly </strong>Report</h3>
-                                <ul class="controls">
-                                    <li class="dropdown">
-                                        <a role="button" tabindex="0" class="dropdown-toggle settings" data-toggle="dropdown">
-                                            <i class="fa fa-cog"></i>
-                                            <i class="fa fa-spinner fa-spin"></i>
-                                        </a>
-                                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                                            <li>
-                                                <a role="button" tabindex="0" class="boxs-toggle">
-                                                    <span class="minimize">
-                                                        <i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                                    <span class="expand">
-                                                        <i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a role="button" tabindex="0" class="boxs-refresh">
-                                                    <i class="fa fa-refresh"></i> Refresh </a>
-                                            </li>
-                                            <li>
-                                                <a role="button" tabindex="0" class="boxs-fullscreen">
-                                                    <i class="fa fa-expand"></i> Fullscreen </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="remove">
-                                        <a role="button" tabindex="0" class="boxs-close">
-                                            <i class="fa fa-times"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="boxs-body hidden-xl-down">                                
-                                <div class="boxs xl-parpl">
-                                    <div class="boxs-body">
-                                        <div class="row">
-                                            <div class="col-md-3 col-sm-3 col-xs-12 text-center mb-10">
-                                                <h3 class="mt-10">518</h3>
-                                                <span class="text-muted">Customers</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-12 text-center mb-10">
-                                                <h3 class="mt-10">36%</h3>
-                                                <span class="text-muted">Target Achieved</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-12 text-center mb-10">
-                                                <h3 class="mt-10">23%</h3>
-                                                <span class="text-muted">New Sales</span>
-                                            </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-12 text-center mb-10">
-                                                <h3 class="mt-10">46</h3>
-                                                <span class="text-muted">New Customers</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="line-area-example" style="height: 230px;"></div>
-                            </div>
-                        </section>
+            
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
                     </div>
-                    
-                    <div class="col-md-6 col-sm-6 col-xs-12"> </div>
-                </div>
-                
-                <div class="row clearfix">
-                    
-                    
-                    
-                </div>
-                <div class="row clearfix">
-                    
-                </div>
-                <div class="row clearfix">
-                    <div class="col-md-12">
-                       
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- Vendor JavaScripts -->
     <script src="assets/bundles/libscripts.bundle.js"></script>
