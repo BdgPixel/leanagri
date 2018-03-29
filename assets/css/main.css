@@ -18461,3 +18461,8 @@ a:focus,a:active,button:active,button:focus,button:hover,button::-moz-focus-inne
 .progress-bar-primary{ background: #d8c72b;  }
 .w-auto{ width: auto !important; }
 .table .fa{ color: #abe04a; }
+
+.prog .col-md-2{ margin-top: 8px; }
+.progress-bar{ 
+    background: linear-gradient(45deg, #B8E149, #abe04a);
+}
