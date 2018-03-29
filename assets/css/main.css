@@ -18466,3 +18466,14 @@ a:focus,a:active,button:active,button:focus,button:hover,button::-moz-focus-inne
 .progress-bar{ 
     background: linear-gradient(45deg, #B8E149, #abe04a);
 }
+.progress-bar:before{
+    display: block;
+    content: url('../images/loc.png');
+    text-align: center;
+    position: absolute;
+    color: green;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -10px !important;
+}
