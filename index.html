@@ -14,6 +14,11 @@
 <link rel="stylesheet" href="assets/js/vendor/rickshaw/rickshaw.min.css">
 <!-- project main css files -->
 <link rel="stylesheet" href="assets/css/main.css">
+
+<!-- JS -->
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
 </head>
 <body id="falcon" class="main_Wrapper">
     <div id="wrap" class="animsition">
@@ -1014,6 +1019,19 @@
                     </div>                   
                 </div>
                 
+                <div calss="row clearfix">
+                    <div calss="col-md-12">
+                        <div class="boxs">
+                            <div class="boxs-header">
+                                <h3 class="custom-font hb-green hidden-xl-down">
+                                    <strong>Pie </strong>Chart
+                                </h3>
+                                <div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="row clearfix">
                     <div class="col-md-8 col-sm-12 col-xs-12" style="display: none;">
@@ -1105,6 +1123,54 @@
     <script src="assets/bundles/loadercripts.bundle.js"></script>
     <script src="assets/js/vendor/easypiechart/jquery.easypiechart.min.js"></script>
 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        Highcharts.chart('container2', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Browser market shares in January, 2018'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Grop A',
+                y: 40,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Grop B',
+                y: 30
+            }, {
+                name: 'Grop C',
+                y: 30
+            }]
+        }]
+    });
+    </script>
 
     <!-- page Js -->
     <script src="assets/bundles/mainscripts.bundle.js"></script>
